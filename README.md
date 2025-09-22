@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-=======
 # websys-barriokopishop
-=======
->>>>>>> 74757a4 (Initial commit)
 # Barrio Kopi Shop Website
 
 This is a simple responsive website for **Barrio Kopi Shop**, built using HTML and CSS.  
@@ -29,8 +25,4 @@ It includes sections for navigation, about, menu, gallery, location, and social 
 
 ---
 
-<<<<<<< HEAD
 ⚠️ **Disclaimer:** This README is generated with the help of AI.
-=======
-⚠️ **Disclaimer:** This README is generated with the help of AI.
->>>>>>> 74757a4 (Initial commit)
