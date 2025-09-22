@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray; 
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-right: 50px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header-logo {
+    margin-left: 50px;
+    width: 200px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery-photos {
+    width: 100%;
+}
