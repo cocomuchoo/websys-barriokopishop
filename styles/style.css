@@ -169,6 +169,67 @@ h1, #hero-photos, #hero-a, #coffee-splatter {
 
 /* -------------------------------------------------- */
 /* Menu */
+#menu-title{
+    font-family: "DM Serif Text", sans-serif;
+    color: #6C3608;
+    font-size: 40px;
+    text-align: center;
+}
+
+#drinks-title{
+    font-family: "DM Serif Text", sans-serif;
+    color: #6C3608;
+    font-size: 30px;
+    text-align: center;
+}
+
+#snacks-title{
+    font-family: "DM Serif Text", sans-serif;
+    color: #6C3608;
+    font-size: 30px;
+    text-align: center;
+}
+
+.menu-items figure .menu-image {
+  width: 100px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.menu-items figure .menu-image img {
+  max-width: 100%;
+  max-height: 80%;
+  width: auto;
+  height: auto;
+  object-fit: contain; 
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+}
+
+.menu-items figure {
+  width: 150px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff8f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin: 0;
+}
+
+.menu-items figure figcaption {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+}
 
 /* -------------------------------------------------- */
 /* Gallery */
