@@ -162,12 +162,16 @@ h1, #hero-photos, #hero-a, #coffee-splatter {
 #about-desc-container p {
     font-family: "Roboto", sans-serif;
     color: #6C3608;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.8rem;
 }
 
 /* -------------------------------------------------- */
+/* Menu */
+
+/* -------------------------------------------------- */
+/* Gallery */
 
 .gallery-grid {
     display: flex;
@@ -177,6 +181,10 @@ h1, #hero-photos, #hero-a, #coffee-splatter {
 .gallery-photos {
     width: 50%;
 }
+
+
+/* -------------------------------------------------- */
+/* Keyframes */
 
 @keyframes fadeIn {
     from {
