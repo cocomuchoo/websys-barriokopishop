@@ -1,62 +1,25 @@
-#hero {
-    background-image: url('../images/20blur.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+html {
+    scroll-behavior: smooth;
+    background-color: white;
+}
+
+main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    color: white;
-    text-align: center;
-    position: relative;
 }
 
-#hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
-    z-index: 1;
-}
-
-#hero * {
-    position: relative;
-    z-index: 2;
-}
-
-#hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-family: "Roboto", sans-serif;
-}
-
-#hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    font-family: "Roboto", sans-serif;
-}
-
-#hero .cta-button {
-    padding: 0.8rem 1.5rem;
-    background-color: #f4a261;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
+/* -------------------------------------------------- */
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 10;
     width: 100%;
+    padding-top: 20px;
+    height: 5vh;
+    z-index: 100;
 }
 
 ul {
@@ -68,17 +31,143 @@ ul {
     list-style-type: none;
 }
 
-a {
+header a {
     text-decoration: none;
-    color: white;
+    color: #6C3608;
     font-family: 'Roboto', sans-serif;
 }
 
 #header-logo {
     margin-left: 50px;
-    width: 200px;
+    width: 150px;
     margin-top: 10px;
 }
+/* -------------------------------------------------- */
+/* Hero */
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#hero-photos {
+    margin-top: 10vh;
+    position: relative;
+    flex: 0.9;
+}
+
+#hero h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    font-family: "DM Serif Text", sans-serif;
+    color: #6C3608;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+#coffee1 {
+    position: relative;
+    top: 200px;
+    width: 300px;
+    left: 150px;
+    transform: rotate(-10deg);
+    z-index: 4;
+}
+
+#coffee2 {
+    width: 250px;
+    position: absolute;
+    top: 170px;
+    left: 330px;
+    bottom: 400px;
+    transform: rotate(20deg);
+    z-index: 2;
+}
+
+h1, #hero-photos, #hero-a, #coffee-splatter {
+    animation: fadeIn 0.5s ease-in-out 0.5s forwards;
+    opacity: 0;
+    z-index: 2;
+}
+
+#hero-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 180px;
+    margin-top: 10vh;
+}
+
+#hero-a {
+    background-color: #496C80;
+    color: white;
+    border-radius: 50px;
+    padding: 20px;
+    width: fit-content;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+#hero-a:hover {
+    background-color: #668495;
+}
+
+#coffee-splatter {
+    width: 600px;
+    position: absolute;
+    top: 70px;
+    left: 45px;
+    bottom: 400px;
+}
+
+/* -------------------------------------------------- */
+/* About Us */
+
+#about {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: #fee8d7;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    font-family: "DM Serif Text", sans-serif;
+    color: #6C3608;
+}
+
+#about-photo-container {
+    flex: 1;
+}
+
+#about-photo {
+    width: 550px;
+    border-radius: 10px;
+}
+
+#about-desc-container {
+    flex: 1;
+}
+
+#about-desc-container h2 {
+    font-size: 2.2rem;
+}
+
+#about-desc-container p {
+    font-family: "Roboto", sans-serif;
+    color: #6C3608;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+}
+
+/* -------------------------------------------------- */
 
 .gallery-grid {
     display: flex;
@@ -88,3 +177,15 @@ a {
 .gallery-photos {
     width: 50%;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
