@@ -3,33 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Barrio Kopi</title>
+    <meta name="description" content="Barrio Kopi, cozy coffee shop">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <a href="index.html"><img id="header-logo" src="images/header-logo.png" alt="Header Logo"></a>
+        <a href="index.html"><img id="header-logo" src="images/header-logo.png" alt="Barrio Kopi Logo"></a>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#location">Location</a></li>
-                <li><a href="#socials">Socials</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#menu-section">Menu</a></li>
+                <li><a href="#gallery-section">Gallery</a></li>
+                <li><a href="#location-section">Location</a></li>
+                <li><a href="#socials-section">Socials</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="hero">
+
             <div id="hero-photos">
                 <img src="images/coffee-splatter.png" alt="Coffee Splatter" id="coffee-splatter">
-                <img src="images/coffee1.png" alt="Coffee" id="coffee1">
-                <img src="images/coffee2.png" alt="Coffee" id="coffee2">
+                <img src="images/Cappucino.png" alt="Picture of Cappucino" id="cappucino">
+                <img src="images/latte.png" alt="Picture of Latte" id="latte">
             </div>
             <div id="hero-text">
                 <h1>Your Neighborhood Coffee Haven</h1>
@@ -37,10 +40,13 @@
             </div>
         </section>
 
-        <section id="about">
-            <div id="about-photo-container">
+        <section id="about-section">
+            <figure id="about-photo-container">
+                <figcaption>Barrio Kopi Exterior</figcaption>
                 <img src="images/shop.JPG" alt="About Us" id="about-photo">
-            </div>
+
+            </figure>
+            
             <div id="about-desc-container">
                 <h2>ABOUT US</h2>
                 <p>
@@ -54,16 +60,17 @@
             </div>
         </section>
 
-        <section id="menu" aria-labelledby="menu-title">
+        <section id="menu-section" aria-labelledby="menu-title">
             <h2 id="menu-title">Our Menu</h2>
-            <article aria-labelledby="drinks-title">
+
+            <section aria-labelledby="drinks-title">
                 <h3 id="drinks-title">Drinks</h3>
                 <div class="menu-items">
 
-                    <!-- div container for layout -->
+                    <!-- div container for layout/styling -->
                     <figure>
                         <div class="menu-image">
-                            <img src="images/coffee1.png" alt="Picture of Iced Macchiato">
+                            <img src="images/macchiato.jpg" alt="Picture of Macchiato">
                         </div>
                             <figcaption>
                             <strong>Brewed Coffee 
@@ -75,7 +82,29 @@
 
                     <figure>
                         <div class="menu-image">
-                             <img src="images/coffee2.png" alt="Picture of Creamy latte">
+                             <img src="images/latte.jpg" alt="Picture of Creamy latte">
+                        </div>
+                        <figcaption>
+                            <strong>Creamy Latte
+                            <br>₱70</strong>
+                            <br>Espresso with steamed milk and a smooth finish.
+                        </figcaption>
+                    </figure>
+
+                     <figure>
+                        <div class="menu-image">
+                             <img src="images/espresso.jpg" alt="Picture of Espresso">
+                        </div>
+                        <figcaption>
+                            <strong>Creamy Latte
+                            <br>₱70</strong>
+                            <br>Espresso with steamed milk and a smooth finish.
+                        </figcaption>
+                    </figure>
+
+                     <figure>
+                        <div class="menu-image">
+                             <img src="images/capuccino.jpg" alt="Picture of Cappucino">
                         </div>
                         <figcaption>
                             <strong>Creamy Latte
@@ -86,45 +115,68 @@
 
                     <figure>
                         <div class="menu-image">
-                            <img src="images/coffee1.png" alt="Picture of Iced Macchiato">
+                            <img src="images/americano.jpg" alt="Picture of Americano">
                         </div>
                         <figcaption>
-                            <strong>Iced Macchiato
+                            <strong>Americano
                                 <br>₱50</strong>
                                 <br>Freshly ground beans, served hot and rich.
                             </figcaption>
                     </figure>
                 </div>
-            </article>
-            <article aria-labelledby="snacks-title">
+            </section>
+            <section aria-labelledby="snacks-title">
                 <h3 id="snacks-title">Snacks</h3>
                 <div class="menu-items">
                     <figure>
                         <div class="menu-image">
-                            <img src="images/coffee2.png" alt="Club Sandwich">
+                            <img src="images/club-sandwich.jpg" alt="Club Sandwich">
                         </div>
                         <figcaption>
                             <strong>Club Sandwich 
                                 <br>₱120</strong>
-                                <br>Lorem Ipsum
+                                <br>Classic sandwich stacked with pork meat, bacon, lettuce, and tomato.
                             </figcaption>
                     </figure>
 
                     <figure>
                         <div class="menu-image">
-                            <img src="images/coffee1.png" alt="Assorted Dessert">
+                            <img src="images/strawberry-cheesecake.jpg" alt="Strawberry Cheesecake">
                         </div>
                         <figcaption>
-                            <strong>Assorted Dessert 
+                            <strong>Strawberry Cheesecake Slice 
                                 <br>₱150</strong>
-                                <br>Lorem Ipsum
+                                <br>Creamy cheesecake with fresh starberries.
                             </figcaption>
                     </figure>
+
+                    <figure>
+                        <div class="menu-image">
+                            <img src="images/chocolate=cake.jpg" alt="Chocolate Cake">
+                        </div>
+                        <figcaption>
+                            <strong>Chocolate Cake Slice
+                                <br>₱150</strong>
+                                <br>Rich and moist chocolate cake with a smooth chocolate ganache.
+                            </figcaption>
+                    </figure>
+
+                    <figure>
+                        <div class="menu-image">
+                            <img src="images/waffle.jpg" alt="Waffle">
+                        </div>
+                        <figcaption>
+                            <strong>Waffle
+                                <br>₱110</strong>
+                                <br>Light and fluffy waffles served with syrup and fresh fruits.
+                            </figcaption>
+                    </figure>
+
                 </div>
-            </article>
+            </section>
         </section>
 
-        <section id="gallery">
+        <section id="gallery-section">
             <h2>Gallery</h2>
             <div class="gallery-grid">
                 <figure class="gallery-photos">
@@ -146,9 +198,9 @@
             </div>
         </section>
 
-        <section id="location">
+        <section id="location-section">
             <h2>Our Location</h2>
-            <p>Come visit Barrio Kopi Shop at Brgy. Sta. Rita, Samar, Philippines.</p>
+            <address>Barrio Kopi Shop at Brgy. Sta. Rita, Samar, Philippines.</address>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.11673955043!2d124.99574267538422!3d11.326177148812262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33086f002e3a8595%3A0xedf4c3d2df23fef!2sBARRIO%20KOPI%20SHOP.!5e0!3m2!1sen!2sph!4v1758553297742!5m2!1sen!2sph" 
                 width="100%" 
                 height="450" 
@@ -159,7 +211,7 @@
             </iframe>
         </section>
 
-        <section id="socials">
+        <section id="socials-section">
             <h2>Connect with Us</h2>
             <ul class="social-links">
                 <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
@@ -168,5 +220,10 @@
             </ul>
         </section>
     </main>
+
+    <footer>
+    <p>2025 Barrio Kopi. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>

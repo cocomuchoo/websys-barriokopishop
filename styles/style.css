@@ -1,6 +1,6 @@
 html {
-    scroll-behavior: smooth;
-    background-color: white;
+   scroll-behavior: smooth;
+   background-color: wheat;
 }
 
 main {
@@ -20,15 +20,18 @@ header {
     padding-top: 20px;
     height: 5vh;
     z-index: 100;
+    background-color: floralwhite;
 }
 
 ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 80px;
     margin-right: 50px;
     list-style-type: none;
+    font-weight: 750;
+
 }
 
 header a {
@@ -69,7 +72,7 @@ header a {
     font-family: "Roboto", sans-serif;
 }
 
-#coffee1 {
+#cappucino {
     position: relative;
     top: 200px;
     width: 300px;
@@ -78,7 +81,7 @@ header a {
     z-index: 4;
 }
 
-#coffee2 {
+#latte {
     width: 250px;
     position: absolute;
     top: 170px;
@@ -127,22 +130,22 @@ h1, #hero-photos, #hero-a, #coffee-splatter {
 /* -------------------------------------------------- */
 /* About Us */
 
-#about {
+#about-section {
     padding: 50px;
     display: flex;
     flex-direction: row;
     width: 80%;
-    background-color: #fee8d7;
-    border-radius: 1px;
+    background-color: #FFD59A;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#about h2 {
+#about-section h2 {
     font-family: "DM Serif Text", sans-serif;
     color: #6C3608;
 }
 
-#about-photo-container {
+#about-section-photo-container {
     flex: 1;
 }
 
@@ -161,14 +164,26 @@ h1, #hero-photos, #hero-a, #coffee-splatter {
 
 #about-desc-container p {
     font-family: "Roboto", sans-serif;
-    color: #6C3608;
-    font-size: 1.2rem;
+    color: rgb(51, 17, 17);
+    font-size: 25px;
     font-weight: 300;
     line-height: 1.8rem;
+}
+#about-photo-container figcaption{
+    font-family: "DM Serif Text", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    
+    color: #6C3608;
 }
 
 /* -------------------------------------------------- */
 /* Menu */
+#menu-section{
+    width: 100%;
+    background-color: wheat;
+    padding: 5%;
+}
 #menu-title{
     font-family: "DM Serif Text", sans-serif;
     color: #6C3608;
@@ -176,60 +191,62 @@ h1, #hero-photos, #hero-a, #coffee-splatter {
     text-align: center;
 }
 
-#drinks-title{
+#drinks-title, #snacks-title{
     font-family: "DM Serif Text", sans-serif;
     color: #6C3608;
     font-size: 30px;
     text-align: center;
 }
-
-#snacks-title{
-    font-family: "DM Serif Text", sans-serif;
-    color: #6C3608;
-    font-size: 30px;
-    text-align: center;
-}
-
+/*image box */
 .menu-items figure .menu-image {
-  width: 100px;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  margin: 0 auto;
+    width: 230px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .menu-items figure .menu-image img {
-  max-width: 100%;
-  max-height: 80%;
-  width: auto;
-  height: auto;
-  object-fit: contain; 
+    width: 210px;
+    height: 200px;
+    object-fit: cover; 
+    display: block;
 }
 
 .menu-items {
   display: flex;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 70px;
   justify-content: center;
 }
-
+/* cards */
 .menu-items figure {
-  width: 150px;
+  width: 230px;
+  height: 330px;
   border-radius: 10px;
-  padding: 20px;
-  background-color: #fff8f0;
+  padding: 10px;
+  /* AI help for color combination code */
+  background: linear-gradient(to bottom, #C68642, #F3D7B4); 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   margin: 0;
 }
 
 .menu-items figure figcaption {
   margin-top: 10px;
-  font-size: 16px;
+ 
+  font-size: 17px;
   line-height: 1.4;
   text-align: center;
 }
+
+.menu-items figure:hover {
+    background-color: wheat;   
+    box-shadow: 0 6px 12px rgb(78, 62, 62);  
+}
+
 
 /* -------------------------------------------------- */
 /* Gallery */
