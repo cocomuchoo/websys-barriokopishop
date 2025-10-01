@@ -192,7 +192,8 @@ h1,
   padding-right: 40px;
 }
 
-#about-photo-container figcaption {
+#about-photo-container figcaption,
+#location-section address {
   font-family: "DM Serif Text", sans-serif;
   font-size: 20px;
   color: #6c3608;
@@ -203,12 +204,16 @@ h1,
 
 /* -------------------------------------------------- */
 /* Menu */
-#menu-section {
-  width: 100%;
-  background-color: wheat;
+#menu-section,
+#gallery-section,
+#location-section,
+#socials-section {
   padding: 5%;
 }
-#menu-title {
+
+#menu-title,
+#gallery-title,
+#location-title {
   font-family: "DM Serif Text", sans-serif;
   color: #6c3608;
   font-size: 40px;
@@ -223,7 +228,8 @@ h1,
   text-align: center;
 }
 /*image box */
-.menu-items figure .menu-image {
+.menu-items figure .menu-image,
+.gallery-items figure .gallery-image {
   width: 230px;
   height: 210px;
   display: flex;
@@ -234,14 +240,16 @@ h1,
   margin: 0 auto;
 }
 
-.menu-items figure .menu-image img {
+.menu-items figure .menu-image img,
+.gallery-items figure .gallery-image img {
   width: 210px;
   height: 200px;
   object-fit: cover;
   display: block;
 }
 
-.menu-items {
+.menu-items,
+.gallery-items {
   display: flex;
   flex-wrap: wrap;
   gap: 70px;
@@ -249,7 +257,8 @@ h1,
 }
 
 /* cards */
-.menu-items figure {
+.menu-items figure,
+.gallery-items figure {
   width: 230px;
   height: 330px;
   border-radius: 10px;
@@ -258,17 +267,19 @@ h1,
   background: linear-gradient(to bottom, #c68642, #f3d7b4);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   margin: 0;
+  user-select: none;
 }
 
-.menu-items figure figcaption {
+.menu-items figure figcaption,
+.gallery-items figure figcaption {
   margin-top: 10px;
-
   font-size: 17px;
   line-height: 1.4;
   text-align: center;
 }
 
-.menu-items figure:hover {
+.menu-items figure:hover,
+.gallery-items figure:hover {
   background-color: wheat;
   box-shadow: 0 6px 12px rgb(78, 62, 62);
   cursor: default;
@@ -277,13 +288,37 @@ h1,
 /* -------------------------------------------------- */
 /* Gallery */
 
-.gallery-grid {
+.gallery-items {
   display: flex;
   flex-direction: row;
 }
 
-.gallery-photos {
-  width: 50%;
+.gallery-items figure figcaption {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.gallery-items figure .gallery-image {
+  border-radius: 30px !important;
+}
+
+.gallery-items figure figcaption {
+  margin-top: 3rem;
+}
+
+/* -------------------------------------------------- */
+/* Our Location */
+
+#map {
+  width: 70rem;
+  border: 1px solid #b3966e !important;
+}
+
+/* -------------------------------------------------- */
+/* Footer */
+#footer-text {
+  text-align: center;
 }
 
 /* -------------------------------------------------- */
