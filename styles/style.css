@@ -83,26 +83,13 @@ header {
   opacity: 0;
 }
 
-/* About Us */
-#about-us-title {
-  font-family: "DM Serif Text", sans-serif;
-  color: var(--primary-color);
-}
-
-/* Menu */
-#menu-title,
-#gallery-title,
-#location-title,
-#drinks-title,
-#snacks-title {
-  font-family: "DM Serif Text", sans-serif;
-  color: var(--primary-color);
-  font-size: 2.5rem;
-}
-
+/* About Us and Menu */
+#about-us-title,
 #menu-title,
 #gallery-title,
 #location-title {
+  font-family: "DM Serif Text", sans-serif;
+  color: var(--primary-color);
   font-size: 2.5rem;
 }
 

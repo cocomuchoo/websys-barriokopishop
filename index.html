@@ -147,13 +147,21 @@
         </div>
       </section>
 
-      <section id="menu-section" class="container my-5">
-        <h2 id="menu-title" class="text-center text-brown mb-5 text-uppercase">
+      <section id="menu-section" class="container my-5 pt-5">
+        <h2
+          id="menu-title"
+          class="text-center text-brown mb-4 text-uppercase fw-bold"
+        >
           Our Menu
         </h2>
 
         <section aria-labelledby="drinks-title" class="mb-5">
-          <h3 id="drinks-title" class="text-center text-brown mb-4">Drinks</h3>
+          <h3
+            id="drinks-title"
+            class="text-center text-secondary-emphasis mb-3 fw-light"
+          >
+            Drinks
+          </h3>
           <div
             class="card-container d-flex flex-wrap justify-content-center rounded-3"
           >
@@ -240,7 +248,9 @@
         </section>
 
         <section aria-labelledby="snacks-title">
-          <h3 id="snacks-title" class="text-center text-brown mb-4">Snacks</h3>
+          <h3 id="snacks-title" class="text-center text-brown mb-3 fw-light">
+            Snacks
+          </h3>
           <div
             class="card-container d-flex flex-wrap justify-content-center rounded-3"
           >
@@ -314,10 +324,10 @@
         </section>
       </section>
 
-      <section id="gallery-section" class="container my-5 text-center">
+      <section id="gallery-section" class="container my-5 text-center pt-5">
         <h2
           id="gallery-title"
-          class="text-brown mb-4 text-uppercase text-center"
+          class="text-brown mb-4 text-uppercase text-center fw-bold"
         >
           Gallery
         </h2>
@@ -378,8 +388,8 @@
         </div>
       </section>
 
-      <section id="location-section" class="container my-5 text-center">
-        <h2 id="location-title" class="text-brown mb-3 text-uppercase">
+      <section id="location-section" class="container my-5 text-center pt-5">
+        <h2 id="location-title" class="text-brown mb-4 text-uppercase fw-bold">
           Our Location
         </h2>
         <address class="fst-italic text-black-50 mb-4">
@@ -395,8 +405,64 @@
         ></iframe>
       </section>
 
-      <section id="socials-section" class="container my-5 text-center">
-        <h2 class="text-brown mb-4 text-uppercase text-center">
+      <section id="contact-section" class="container my-5 py-5">
+        <h2 class="text-brown mb-4 text-uppercase text-center fw-bold">
+          Contact Us
+        </h2>
+        <p class="text-center fst-italic text-black-50 mb-4">
+          Send us a message and we’ll get back to you soon.
+        </p>
+        <form
+          class="row g-3 justify-content-center"
+          id="contact-form"
+          novalidate
+        >
+          <div class="col-md-5">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              id="name"
+              placeholder="Your name"
+            />
+            <div class="invalid-feedback">Name is required.</div>
+          </div>
+
+          <div class="col-md-5">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="email"
+              placeholder="email@example.com"
+            />
+            <div class="invalid-feedback">Valid email is required.</div>
+          </div>
+
+          <div class="col-md-10">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              id="message"
+              rows="4"
+              class="form-control"
+              id="message"
+              placeholder="Write your message here..."
+            ></textarea>
+            <div class="invalid-feedback">Message is required.</div>
+          </div>
+
+          <div class="col-md-10 text-center">
+            <button type="submit" class="btn btn-success px-4">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section id="socials-section" class="container my-5 text-center py-5">
+        <h2 class="text-brown mb-4 text-uppercase text-center fw-bold">
           Connect with Us
         </h2>
         <ul class="list-inline">
