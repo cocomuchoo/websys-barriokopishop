@@ -69,3 +69,39 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 3000);
   }
 });
+
+
+const buttons = document.querySelectorAll("#menu-section .btn");
+
+// Get sections
+const drinksSection = document.getElementById("drinks-section");
+const snacksSection = document.getElementById("snacks-section");
+
+// Function to show category
+function showCategory(category) {
+  if (category === "all") {
+    drinksSection.style.display = "flex";
+    snacksSection.style.display = "flex";
+  } else if (category === "drinks") {
+    drinksSection.style.display = "flex";
+    snacksSection.style.display = "none";
+  } else if (category === "snacks") {
+    drinksSection.style.display = "none";
+    snacksSection.style.display = "flex";
+  }
+}
+
+//event listeners
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const category = btn.id.replace("btn-", ""); // "drinks" or "snacks"
+    showCategory(category);
+
+    //handle active button styling
+    buttons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+  });
+});
+
+//show all on page load
+window.addEventListener("DOMContentLoaded", () => showCategory("all"));

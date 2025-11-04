@@ -139,3 +139,240 @@ footer {
     transform: translateY(0);
   }
 }
+
+/* Mobile Styles */
+@media (max-width: 991px) {
+  #header-logo {
+    min-width: 200px;
+    width: 200px;
+  }
+
+  .navbar-brand {
+    margin-left: 1rem;
+  }
+
+  .navbar-toggler {
+    margin-right: 1rem;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .navbar-nav .nav-item {
+    padding: 0.5rem 0;
+  }
+
+  #hero {
+    flex-direction: column;
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+
+  #hero-photos {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  #coffee-splatter {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  #cappucino {
+    width: 45%;
+    margin-right: -30px;
+  }
+
+  #latte {
+    width: 45%;
+    margin-left: -30px;
+  }
+
+  #hero-text {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  #hero-text-container {
+    text-align: center;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  #about-section {
+    padding: 2rem 1rem;
+  }
+
+  #about-section .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #about-section .col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+  }
+
+  #about-section .border-end {
+    border-right: none;
+  }
+
+  #about-section .border-secondary {
+    border: none;
+  }
+
+  #about-section .pe-5 {
+    padding-right: 0;
+  }
+
+  #about-section .ps-5 {
+    padding-left: 0;
+  }
+
+  #about-section .col-md-6:first-child {
+    margin-bottom: 2rem;
+  }
+
+  #about-section figure {
+    margin: 0;
+  }
+
+  #about-photo {
+    width: 100%;
+    height: auto;
+  }
+
+  #about-us-title {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  #about-section .lead {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  #about-us-title,
+  #menu-title,
+  #gallery-title,
+  #location-title {
+    font-size: 2rem;
+  }
+
+  .card-container {
+    gap: 1.5rem;
+    row-gap: 1.5rem;
+  }
+
+  .card-container > div {
+    flex: 0 0 calc(50% - 0.75rem);
+    max-width: calc(50% - 0.75rem);
+  }
+
+  .card {
+    width: 100%;
+    height: 300px;
+    padding: 0.75rem;
+    margin: 0;
+  }
+
+  .card figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .drinks-img-container {
+    flex-shrink: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .drinks-img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  .card figcaption {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .card figcaption strong {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #header-logo {
+    min-width: 150px;
+    width: 150px;
+  }
+
+  #hero-text {
+    font-size: 2rem;
+  }
+
+  #about-section {
+    padding: 1.5rem 0.75rem;
+  }
+
+  #about-section .col-md-6:first-child {
+    margin-bottom: 1.5rem;
+  }
+
+  #about-section .lead {
+    font-size: 0.9rem;
+  }
+
+  #about-us-title,
+  #menu-title,
+  #gallery-title,
+  #location-title {
+    font-size: 1.75rem;
+  }
+
+  .card-container {
+    gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  .card-container > div {
+    flex: 0 0 calc(50% - 0.5rem);
+    max-width: calc(50% - 0.5rem);
+  }
+
+  .card {
+    height: 260px;
+    padding: 0.6rem;
+  }
+
+  .drinks-img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .card figcaption {
+    font-size: 0.7rem;
+  }
+
+  .card figcaption strong {
+    font-size: 0.75rem;
+  }
+
+  #hero-button {
+    font-size: 0.9rem;
+    padding: 0.625rem 1.5rem;
+  }
+}

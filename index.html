@@ -43,7 +43,19 @@
           />
         </a>
 
-        <div class="collapse navbar-collapse justify-content-end">
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav gap-4 me-5">
             <li class="nav-item">
               <a class="nav-link" href="#about-section">About</a>
@@ -96,7 +108,7 @@
         <div id="hero-text-container">
           <h1 class="mb-4" id="hero-text">Your Neighborhood Coffee Haven</h1>
           <a
-            href="#menu"
+            href="#menu-section"
             class="text-white rounded-5 py-3 px-4"
             id="hero-button"
             >What's Brewing?</a
@@ -155,24 +167,26 @@
           Our Menu
         </h2>
 
-        <section aria-labelledby="drinks-title" class="mb-5">
-          <h3
-            id="drinks-title"
-            class="text-center text-secondary-emphasis mb-3 fw-light"
-          >
+        <!-- Category buttons -->
+        <div class="text-center mb-4">
+           <button type="button" class="btn btn-light btn-lg me-4" id="btn-all">
+            All
+          </button>
+          <button type="button" class="btn btn-light btn-lg me-4" id="btn-drinks">
             Drinks
-          </h3>
-          <div
-            class="card-container d-flex flex-wrap justify-content-center rounded-3"
-          >
+          </button>
+          <button type="button" class="btn btn-light btn-lg" id="btn-snacks">
+            Snacks
+          </button>
+        </div>
+
+        <!-- Drinks Section -->
+        <section aria-labelledby="drinks-title" class="mb-5" id="drinks-section">
+          <div class="card-container d-flex flex-wrap justify-content-center rounded-3">
             <div class="text-center">
               <figure class="card p-2">
                 <div class="drinks-img-container mx-auto mb-3">
-                  <img
-                    src="images/macchiato.jpg"
-                    alt="Macchiato"
-                    class="drinks-img img-fluid rounded-circle"
-                  />
+                  <img src="images/macchiato.jpg" alt="Macchiato" class="drinks-img img-fluid rounded-circle" />
                 </div>
                 <figcaption>
                   <strong>Macchiato<br />₱130</strong><br />
@@ -184,11 +198,7 @@
             <div class="text-center">
               <figure class="card p-2">
                 <div class="drinks-img-container mx-auto mb-3">
-                  <img
-                    src="images/latte.jpg"
-                    alt="Creamy Latte"
-                    class="drinks-img img-fluid rounded-circle"
-                  />
+                  <img src="images/latte.jpg" alt="Creamy Latte" class="drinks-img img-fluid rounded-circle" />
                 </div>
                 <figcaption>
                   <strong>Creamy Latte<br />₱130</strong><br />
@@ -200,11 +210,7 @@
             <div class="text-center">
               <figure class="card p-2">
                 <div class="drinks-img-container mx-auto mb-3">
-                  <img
-                    src="images/espresso.jpg"
-                    alt="Espresso"
-                    class="drinks-img img-fluid rounded-circle"
-                  />
+                  <img src="images/espresso.jpg" alt="Espresso" class="drinks-img img-fluid rounded-circle" />
                 </div>
                 <figcaption>
                   <strong>Espresso<br />₱80</strong><br />
@@ -216,11 +222,7 @@
             <div class="text-center">
               <figure class="card p-2">
                 <div class="drinks-img-container mx-auto mb-3">
-                  <img
-                    src="images/capuccino.jpg"
-                    alt="Cappuccino"
-                    class="drinks-img img-fluid rounded-circle"
-                  />
+                  <img src="images/capuccino.jpg" alt="Cappuccino" class="drinks-img img-fluid rounded-circle" />
                 </div>
                 <figcaption>
                   <strong>Cappuccino<br />₱140</strong><br />
@@ -232,11 +234,7 @@
             <div class="text-center">
               <figure class="card p-2">
                 <div class="drinks-img-container mx-auto mb-3">
-                  <img
-                    src="images/americano.jpg"
-                    alt="Americano"
-                    class="drinks-img img-fluid rounded-circle"
-                  />
+                  <img src="images/americano.jpg" alt="Americano" class="drinks-img img-fluid rounded-circle" />
                 </div>
                 <figcaption>
                   <strong>Americano<br />₱110</strong><br />
@@ -247,26 +245,17 @@
           </div>
         </section>
 
-        <section aria-labelledby="snacks-title">
-          <h3 id="snacks-title" class="text-center text-brown mb-3 fw-light">
-            Snacks
-          </h3>
-          <div
-            class="card-container d-flex flex-wrap justify-content-center rounded-3"
-          >
+        <!-- Snacks -->
+        <section aria-labelledby="snacks-title" id="snacks-section">
+          <div class="card-container d-flex flex-wrap justify-content-center rounded-3">
             <div class="text-center">
               <figure class="card p-2">
                 <div class="drinks-img-container mx-auto mb-3">
-                  <img
-                    src="images/club-sandwich.jpg"
-                    alt="Club Sandwich"
-                    class="drinks-img img-fluid rounded-circle"
-                  />
+                  <img src="images/club-sandwich.jpg" alt="Club Sandwich" class="drinks-img img-fluid rounded-circle" />
                 </div>
                 <figcaption>
-                  <strong>Club Sandwich <br />₱120</strong>
-                  <br />Classic sandwich stacked with pork meat, bacon, lettuce,
-                  and tomato.
+                  <strong>Club Sandwich <br />₱120</strong><br />
+                  Classic sandwich stacked with pork meat, bacon, lettuce, and tomato.
                 </figcaption>
               </figure>
             </div>
@@ -274,15 +263,11 @@
             <div class="text-center">
               <figure class="card p-2">
                 <div class="drinks-img-container mx-auto mb-3">
-                  <img
-                    src="images/strawberry-cheesecake.jpg"
-                    alt="Strawberry Cheesecake"
-                    class="drinks-img img-fluid rounded-circle"
-                  />
+                  <img src="images/strawberry-cheesecake.jpg" alt="Strawberry Cheesecake" class="drinks-img img-fluid rounded-circle" />
                 </div>
                 <figcaption>
-                  <strong>Strawberry Cheesecake Slice <br />₱150</strong>
-                  <br />Creamy cheesecake with fresh starberries.
+                  <strong>Strawberry Cheesecake Slice <br />₱150</strong><br />
+                  Creamy cheesecake with fresh strawberries.
                 </figcaption>
               </figure>
             </div>
@@ -290,16 +275,11 @@
             <div class="text-center">
               <figure class="card p-2">
                 <div class="drinks-img-container mx-auto mb-3">
-                  <img
-                    src="images/chocolate=cake.jpg"
-                    alt="Chocolate Cake Slice"
-                    class="drinks-img img-fluid rounded-circle"
-                  />
+                  <img src="images/chocolate=cake.jpg" alt="Chocolate Cake Slice" class="drinks-img img-fluid rounded-circle" />
                 </div>
                 <figcaption>
-                  <strong>Chocolate Cake Slice <br />₱150</strong>
-                  <br />Rich and moist chocolate cake with a smooth chocolate
-                  ganache.
+                  <strong>Chocolate Cake Slice <br />₱150</strong><br />
+                  Rich and moist chocolate cake with a smooth chocolate ganache.
                 </figcaption>
               </figure>
             </div>
@@ -307,16 +287,11 @@
             <div class="text-center">
               <figure class="card p-2">
                 <div class="drinks-img-container mx-auto mb-3">
-                  <img
-                    src="images/waffle.jpg"
-                    alt="Waffle"
-                    class="drinks-img img-fluid rounded-circle"
-                  />
+                  <img src="images/waffle.jpg" alt="Waffle" class="drinks-img img-fluid rounded-circle" />
                 </div>
                 <figcaption>
-                  <strong>Waffle <br />₱110</strong>
-                  <br />Light and fluffy waffles served with syrup and fresh
-                  fruits.
+                  <strong>Waffle <br />₱110</strong><br />
+                  Light and fluffy waffles served with syrup and fresh fruits.
                 </figcaption>
               </figure>
             </div>
@@ -410,7 +385,7 @@
           Contact Us
         </h2>
         <p class="text-center fst-italic text-black-50 mb-4">
-          Send us a message and we’ll get back to you soon.
+          Send us a message and we'll get back to you soon.
         </p>
         <form
           class="row g-3 justify-content-center"
